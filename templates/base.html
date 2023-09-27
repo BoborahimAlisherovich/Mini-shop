@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %} {% endblock head %}
+    <!-- Google fonts api  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Fonrawsome api  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div class="sidebar">
+        <ul class="sidebar__list">
+            <i class="sidebar__cross-btn fas fa-x cursor"></i>
+            <li class="sidebar__item"><a href="{% url 'shop:detail'%}" class="sidebar__link bold">Futbolkalar</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link bold">Hudilar</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link bold">Krujkalar</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link bold">Shaxsiy dizayn</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link bold">Aloqa</a></li>
+        </ul>
+        <div class="sidebar__button">
+            <i class="fas fa-cart-shopping" style="color: #000;"></i>
+            <span class="sidebar__button--text bold">Savatcha</span>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <div class="header-in">
+                <div class="header__index">
+                    <a class="header__logo bold" href="index.html">Mino</a>
+                </div>
+                <ul class="header__list">
+                    <li class="header__item"><a href="{% url 'shop:detail'%}" class="header__link bold">Futbolkalar</a></li>
+                    <li class="header__item"><a href="{% url 'shop:all'%}" class="header__link bold">Hudilar</a></li>
+                    <li class="header__item"><a href="{% url 'shop:cart'%}" class="header__link bold">Krujkalar</a></li>
+                    <li class="header__item"><a href="{% url 'shop:order_succes'%}" class="header__link bold">Shaxsiy dizayn</a></li>
+                    <li class="header__item"><a href="{% url 'shop:order'%}" class="header__link bold">Aloqa</a></li>
+                </ul>
+                <div class="button">
+                    <i class="fas fa-cart-shopping"></i>
+                    <span class="header__button--text bold">Savatcha</span>
+                </div>
+                <div class="burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        {% block content %} {% endblock content %}
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-in">
+                <div class="footer__mainlist">
+                    <a class="title">Mino</a>
+                    <span>Mino bu ajoyib yozuvlik futbulkalar, hudilar, krujkalar va sovg'alar internet do'koni.</span>
+                    <h3 style="color: #FFD600;" class="cursor">+998 90 123 45 67</h3>
+                </div>
+                <div class="footer__nextlist">
+                    <div class="footer__list">
+                        <h4>Sahifalar</h4>
+                        <a href="#" class="footer__text">Bosh sahifa</a>
+                        <a href="#" class="footer__text">Shaxsiy dizayn</a>
+                        <a href="#" class="footer__text">Do'konlar</a>
+                        <a href="#" class="footer__text">Aloqa</a>
+                    </div>
+                    <div class="footer__list">
+                        <h4>Hizmatlar</h4>
+                        <a href="#" class="footer__text">Bepul yetkazish</a>
+                        <a href="#" class="footer__text">Pulni qaytarish</a>
+                        <a href="#" class="footer__text">Onlayn aloqa</a>
+                        <a href="#" class="footer__text">To'lov turi</a>
+                    </div>
+                    <div class="footer__list">
+                        <h4>Hamkorlik</h4>
+                        <a href="#" class="footer__text">Hamkorlar uchun</a>
+                        <a href="#" class="footer__text">Katta buyurtma</a>
+                        <a href="#" class="footer__text">Savolim bor edi?</a>
+                        <a href="#" class="footer__text">Qoidalar</a>
+                    </div>
+                    <div class="footer__list" style="margin-bottom: 0px;">
+                        <h4>Qo'shimcha</h4>
+                        <a href="#" class="footer__text">Yetkazib berish usuli</a>
+                        <a href="#" class="footer__text">O'zingiz olib ketmoqchimisiz?</a>
+                        <a href="#" class="footer__text">Savatcha</a>
+                        <a href="#" class="footer__text">Buyurtmalar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>

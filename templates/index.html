@@ -1,0 +1,461 @@
+{% extends 'base.html'%}
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block head %}
+    <title>MinoShop</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+{% endblock head %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+{% block content %}
+        <section class="example">
+            <div class="container">
+                <div class="example-in">
+                    <div class="example__left">
+                        <div class="example__left--box">
+                            <div class="example__box--text1 example__box--text">Ajoyib</div>
+                            <div class="example__box--text2 example__box--text">yozuvlik</div>
+                            <div class="example__box--text3 example__box--text"></div>
+                        </div>
+                    </div>
+                    <div class="example__right">
+                        <div class="example__container">
+                            <div class="example__slide">
+                                <div class="example__imagebox">
+                                    <img class="example__right--image example__right--image1" src="{% static 'images/t-short.svg'%}" alt="T-Short">
+                                    <span class="example__price">
+                                        <p class="example__price--yellow">$7.5 </p>
+                                        <p> - 81.000 uzs</p>
+                                    </span>
+                                </div>
+                                <div class="example__imagebox">
+                                    <img class="example__right--image example__right--image2" src="{% static 'images/t-short.svg'%}" alt="T-Short">
+                                    <span class="example__price">
+                                        <p class="example__price--yellow">$7.5 </p>
+                                        <p> - 81.000 uzs</p>
+                                    </span>
+                                </div>
+                                <div class="example__imagebox">
+                                    <img class="example__right--image example__right--image3" src=".{% static 'images/t-short.svg'%}" alt="T-Short">
+                                    <span class="example__price">
+                                        <p class="example__price--yellow">$7.5 </p>
+                                        <p> - 81.000 uzs</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <div class="services-in">
+                    <div class="services__card">
+                        <img class="service__image" src="{% static 'images/service1.svg'%}" alt="Delivery">
+                        <span>O'zbekiston bo'ylab yetkazib berish</span>
+                    </div>
+                    <div class="services__card">
+                        <img class="service__image" src="{% static 'images/service1.svg'%}" alt="Payment methods">
+                        <span>Qulay to'lov usullari</span>
+                    </div>
+                    <div class="services__card">
+                        <img class="service__image" src="{% static 'images/service1.svg'%}" alt="24/7 Working time">
+                        <span>Haftada 7 kun 24 soat aloqadamiz</span>
+                    </div>
+                    <div class="services__card">
+                        <img class="service__image" src="{% static 'images/service1.svg'%}" alt="High quality permormance">
+                        <span>Yuqori sifatli tovarlar</span>
+                    </div>
+                    <div class="services__card">
+                        <img class="service__image" src="{% static 'images/service1.svg'%}" alt="Cashback">
+                        <span>3 kun ichida pulni qaytarib olish</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="offer">
+            <div class="container">
+                <div class="offer-in">
+                    <div class="offer__left">
+                        <div class="offer__text">
+                            <span class="offer__title">Shaxsiy matningizni istalgan rangdagi sifatli futbolkaga tushirib beramiz!</span>
+                            <span class="offer__price">Boshlanish narxi 63.000 uzs</span>
+                            <button class="button cursor bold" style="font-size: 16px;">Sinab ko'rish</button>
+                        </div>
+                        <div class="offer__imagebox">
+                            <img class="offer__image" src="{% static 'images/black-t-short.svg'%}" alt="Black T-Short">
+                        </div>
+                    </div>
+                    <div class="offer__right">
+                        <div class="offer__text">
+                            <span class="offer__title">Shaxsiy matningizni istalgan rangdagi sifatli futbolkaga tushirib beramiz!</span>
+                            <span class="offer__price">Boshlanish narxi 63.000 uzs</span>
+                            <button class="button cursor bold" style="font-size: 16px;">Sinab ko'rish</button>
+                        </div>
+                        <div class="offer__imagebox">
+                            <img class="offer__image" src="{% static 'images/black-t-short.svg'%}" alt="White mug">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="categories">
+            <div class="container">
+                <div class="categories-in">
+                    <span class="title">Kategoriyalar</span>
+                    <div class="categories__list">
+                        <div class="categories__list--card">
+                            <img src="{% static 'images/tshort-logo.svg'%}" alt="T-Short Logo">
+                            <span>Futbolkalar</span>
+                        </div>
+                        <div class="categories__list--card">
+                            <img src="{% static 'images/tshort-logo.svg'%}" alt="Hoodie Logo">
+                            <span>Hudilar</span>
+                        </div>
+                        <div class="categories__list--card">
+                            <img src="{% static 'images/tshort-logo.svg'%}" alt="Mug Logo">
+                            <span>Krujkalar</span>
+                        </div>
+                        <div class="categories__list--card">
+                            <img src="{% static 'images/tshort-logo.svg'%}" alt="Baseball Cap Logo">
+                            <span>Beyzbolkalar</span>
+                        </div>
+                        <div class="categories__list--card">
+                            <img src="{% static 'images/tshort-logo.svg'%}" alt="Gift Logo">
+                            <span>Sovg'alar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="container">
+                <div class="products-in">
+                    <span class="title">TOP Tovarlar</span>
+                    <div class="products__list">
+                        <div class="products__imagebox">
+                            <img class="products__right--image products__right--image1" src="{% static 'images/t-short.svg'%}" alt="T-Short">
+                            <span class="products__price">
+                                <p class="products__price--yellow">$7.5 </p>
+                                <p> - 81.000 uzs</p>
+                            </span>
+                        </div>
+                        <div class="products__imagebox">
+                            <img class="products__right--image products__right--image1" src="{% static 'images/t-short.svg'%}" alt="T-Short">
+                            <span class="products__price">
+                                <p class="products__price--yellow">$7.5 </p>
+                                <p> - 81.000 uzs</p>
+                            </span>
+                        </div>
+                        <div class="products__imagebox">
+                            <img class="products__right--image products__right--image1" src="{% static 'images/t-short.svg'%}" alt="T-Short">
+                            <span class="products__price">
+                                <p class="products__price--yellow">$7.5 </p>
+                                <p> - 81.000 uzs</p>
+                            </span>
+                        </div>
+                        <div class="products__imagebox">
+                            <img class="products__right--image products__right--image1" src="{% static 'images/t-short.svg'%}" alt="T-Short">
+                            <span class="products__price">
+                                <p class="products__price--yellow">$7.5 </p>
+                                <p> - 81.000 uzs</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="order">
+            <div class="container">
+                <div class="order-in">
+                    <div class="order__title">
+                        <span class="title" style="color: #CA8970;">Barcha &emsp14;</span>
+                        <span class="title">Tovarlar</span>
+                    </div>
+                    <div class="order__main">
+                        <div class="order__left">
+                            <div class="order__imagebox">
+                                <img class="order__left--image order__left--image1" src="{% static 'images/t-short.svg'%}" alt="T-Short">
+                                <span class="order__price">
+                                    <p class="order__price--yellow">$7.5 </p>
+                                    <p> - 81.000 uzs</p>
+                                </span>
+                            </div>
+                            <div class="order__imagebox">
+                                <img class="order__left--image order__left--image1" src="{% static 'images/t-short.svg'%}" alt="T-Short">
+                                <span class="order__price">
+                                    <p class="order__price--yellow">$7.5 </p>
+                                    <p> - 81.000 uzs</p>
+                                </span>
+                            </div>
+                            <div class="order__imagebox">
+                                <img class="order__left--image order__left--image1" src="{% static 'images/t-short.svg'%}" alt="T-Short">
+                                <span class="order__price">
+                                    <p class="order__price--yellow">$7.5 </p>
+                                    <p> - 81.000 uzs</p>
+                                </span>
+                            </div>
+                            <div class="order__imagebox">
+                                <img class="order__left--image order__left--image1" src="{% static 'images/t-short.svg'%}" alt="T-Short">
+                                <span class="order__price">
+                                    <p class="order__price--yellow">$7.5 </p>
+                                    <p> - 81.000 uzs</p>
+                                </span>
+                            </div>
+                            <div class="order__imagebox">
+                                <img class="order__left--image order__left--image1" src="{% static 'images/t-short.svg'%}" alt="T-Short">
+                                <span class="order__price">
+                                    <p class="order__price--yellow">$7.5 </p>
+                                    <p> - 81.000 uzs</p>
+                                </span>
+                            </div>
+                            <div class="order__imagebox">
+                                <img class="order__left--image order__left--image1" src="{% static 'images/t-short.svg'%}" alt="T-Short">
+                                <span class="order__price">
+                                    <p class="order__price--yellow">$7.5 </p>
+                                    <p> - 81.000 uzs</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="order__right">
+                            <div class="order__categories">
+                                <h2 class="order__categories--title">Kategoriyalar</h2>
+                                <div class="order__categories--list">
+                                    <div class="cursor order__categories--item">
+                                        <i class="fas fa-dice-four"></i>
+                                        <b>Futbolkalar</b>
+                                    </div>
+                                    <div class="cursor order__categories--item">
+                                        <i class="fas fa-dice-four"></i>
+                                        <b>Hudilar</b>
+                                    </div>
+                                    <div class="cursor order__categories--item">
+                                        <i class="fas fa-dice-four"></i>
+                                        <b>Krujkalar</b>
+                                    </div>
+                                    <div class="cursor order__categories--item">
+                                        <i class="fas fa-dice-four"></i>
+                                        <b>Sovg'alar</b>
+                                    </div>
+                                    <div class="cursor order__categories--select">
+                                        <h3>Material <i class="fas fa-chevron-up"></i></h3>
+                                        <input type="checkbox">
+                                        <span>Paxta (3)</span>
+                                    </div>
+                                    <div class="order__categories--select">
+                                        <h3>Narxi <i class="fas fa-chevron-up"></i></h3>
+                                        <span>50.000 - 390.000</span>
+                                    </div>
+                                    <div class="order__categories--select">
+                                        <h3>Rang <i class="fas fa-chevron-up"></i></h3>
+                                        <div class="order__categories--colors">
+                                            <div class="color" style="background-color: black;"></div>
+                                            <div class="color" style="background-color: blue;"></div>
+                                            <div class="color" style="background-color: brown;"></div>
+                                            <div class="color" style="background-color: gray;"></div>
+                                            <div class="color" style="background-color: green;"></div>
+                                            <div class="color" style="background-color: white;"></div>
+                                            <div class="color" style="background-color: orange;"></div>
+                                            <div class="color" style="background-color: purple;"></div>
+                                            <div class="color" style="background-color: red;"></div>
+                                            <div class="color" style="background-color: yellow;"></div>
+                                        </div>
+                                        <button class="button bold cursor" style="font-size: 18px; width: 100%;">Hammasini qaytarish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__bottom">
+                        <button class="button bold cursor" style="font-size: 18px;">Hammasini ko'rish</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mostsold">
+            <div class="container">
+                <span class="title">Eng ko'p sotilgan tovarlar</span>
+                <div class="mostsold-in">
+                    <div class="mostsold__left">
+                        <h1>Erni gapi gapmi?!</h1>
+                        <div class="mostsold__mainarea">
+                            <div class="mostsold__imagebox">
+                                <img class="mostsold__image" src="{% static 'images/white-t-short.svg'%}" alt="Black T-Short">
+                            </div>
+                            <div class="mostsold__text">
+                                <span class="order__price">
+                                    <p class="order__price--yellow">$7.5 </p>
+                                    <p> - 81.000 uzs</p>
+                                </span>
+                                <p style="margin: 20px 0px;">80% paxta va 20% poliesterdan tayyorlangan  sifatli futbolka. M ,L, XL, XXL hajmlarida mavjud.</p>
+                                <p>Omborda : bor. (12- ta qoldi)</p>
+                                <button class="button bold cursor" style="font-size: 18px; width: 90%;"><i class="fas fa-cart-shopping"></i> &emsp14; Savatga</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mostsold__left mostsold__right">
+                        <h1>Erni gapi gapmi?!</h1>
+                        <div class="mostsold__mainarea">
+                            <div class="mostsold__imagebox">
+                                <img class="mostsold__image" src="{% static 'images/white-t-short.svg'%}" alt="Black T-Short">
+                            </div>
+                            <div class="mostsold__text">
+                                <span class="order__price">
+                                    <p class="order__price--yellow">$7.5 </p>
+                                    <p> - 81.000 uzs</p>
+                                </span>
+                                <p style="margin: 20px 0px;">80% paxta va 20% poliesterdan tayyorlangan  sifatli futbolka. M ,L, XL, XXL hajmlarida mavjud.</p>
+                                <p>Omborda : bor. (12- ta qoldi)</p>
+                                <button class="button bold cursor" style="font-size: 18px; width: 90%;"><i class="fas fa-cart-shopping"></i> &emsp14; Savatga</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="container">
+                <div class="products-in">
+                    <span class="title">Hudilar</span>
+                    <div class="products__list">
+                        <div class="products__imagebox">
+                            <img class="products__right--image products__right--image1" src="{% static 'images/t-short.svg'%}" alt="T-Short">
+                            <span class="products__price">
+                                <p class="products__price--yellow">$7.5 </p>
+                                <p> - 81.000 uzs</p>
+                            </span>
+                        </div>
+                        <div class="products__imagebox">
+                            <img class="products__right--image products__right--image1" src="{% static 'images/t-short.svg'%}" alt="T-Short">
+                            <span class="products__price">
+                                <p class="products__price--yellow">$7.5 </p>
+                                <p> - 81.000 uzs</p>
+                            </span>
+                        </div>
+                        <div class="products__imagebox">
+                            <img class="products__right--image products__right--image1" src="{% static 'images/t-short.svg'%}" alt="T-Short">
+                            <span class="products__price">
+                                <p class="products__price--yellow">$7.5 </p>
+                                <p> - 81.000 uzs</p>
+                            </span>
+                        </div>
+                        <div class="products__imagebox">
+                            <img class="products__right--image products__right--image1" src="{% static 'images/t-short.svg'%}" alt="T-Short">
+                            <span class="products__price">
+                                <p class="products__price--yellow">$7.5 </p>
+                                <p> - 81.000 uzs</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="container">
+                <div class="products-in">
+                    <span class="title">Krujkalar</span>
+                    <div class="products__list">
+                        <div class="products__imagebox">
+                            <img class="products__right--image products__right--image1" src="{% static 'images/white-mug.svg'%}" alt="T-Short">
+                            <span class="products__price">
+                                <p class="products__price--yellow">$2.5 </p>
+                                <p> - 31.000 uzs</p>
+                            </span>
+                        </div>
+                        <div class="products__imagebox">
+                            <img class="products__right--image products__right--image1" src="{% static 'images/white-mug.svg'%}" alt="T-Short">
+                            <span class="products__price">
+                                <p class="products__price--yellow">$2.5 </p>
+                                <p> - 31.000 uzs</p>
+                            </span>
+                        </div>
+                        <div class="products__imagebox">
+                            <img class="products__right--image products__right--image1" src="{% static 'images/white-mug.svg'%}" alt="T-Short">
+                            <span class="products__price">
+                                <p class="products__price--yellow">$2.5 </p>
+                                <p> - 31.000 uzs</p>
+                            </span>
+                        </div>
+                        <div class="products__imagebox">
+                            <img class="products__right--image products__right--image1" src="{% static 'images/white-mug.svg'%}" alt="T-Short">
+                            <span class="products__price">
+                                <p class="products__price--yellow">$2.5 </p>
+                                <p> - 31.000 uzs</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <div class="contact-in">
+                    <span class="title">Aloqa</span>
+                    <div class="contact__main">
+                        <form class="contact__form">
+                            <div class="contact__label">
+                                <input class="contact__input" type="text" placeholder="Ism">
+                                <input class="contact__input" type="email" placeholder="Pochta">
+                            </div>
+                            <input class="contact__input" type="text" placeholder="Mavzu">
+                            <textarea class="contact__input contact__textarea"></textarea>
+                        </form>
+                        <div class="contact__info">
+                            <div class="contact__list">
+                                <i class="fas fa-map"></i>
+                                <span>Haqqulobod shahri, Namangan viloyati</span>
+                            </div>
+                            <div class="contact__list">
+                                <i class="fas fa-phone"></i>
+                                <span>+99 893 123 45 67 </span>
+                            </div>
+                            <div class="contact__list">
+                                <i class="fas fa-clock"></i>
+                                <span>Ish vaqti : Dush-Jum 08:00-17:00</span>
+                            </div>
+                            <div class="contact__list">
+                                <i class="fas fa-envelope"></i>
+                                <span>minoshopuz@yandex.com</span>
+                            </div>
+                            <div class="contact__list contact__last-list">
+                                <div class="contact__sn cursor">
+                                    <i class="fa-brands fa-facebook" style="color: blue;"></i>
+                                    <span>Facebook</span>
+                                </div>
+                                <div class="contact__sn cursor">
+                                    <i class="fa-brands fa-instagram" style="color: red;"></i>
+                                    <span>Instagram</span>
+                                </div>
+                                <div class="contact__sn cursor">
+                                    <i class="fa-brands fa-telegram" style="color: lightblue;"></i>
+                                    <span>Telegram</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="{% static 'js/app.js' %}"></script>
+    <script src="{% static 'js/typed.min.js' %}"></script>
+    <script>
+        let typed = new Typed('.example__box--text3', {
+            strings: ['futbolkalar'],
+            typeSpeed:100,
+            backSpeed:100,
+            loop:true,
+        })
+    </script>
+{% endblock content %}
+    </main>
+</body>
+</html>

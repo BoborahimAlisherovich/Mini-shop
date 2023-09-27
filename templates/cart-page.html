@@ -1,0 +1,150 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block head %}
+<title>Cart Page</title>
+<link rel="stylesheet" href="{% static 'css/product.css'%}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer"/>
+{% endblock head %}
+{% block content %}
+<div class="container">
+    <div class="main_inner">
+        <h1 style="color: #404143;" class="text-xl font-bold pl-4 mb-4 sm:text-2xl md:text-3xl lg:text-3xl">Savatcha</h1>
+        <div class="grid grid-cols-10 grid-rows-1">
+            <div class="col-start-1 col-end-11 lg:col-end-8 px-5">
+                
+                <!-- Cart Product -->
+
+                <div class="product gap-y-4 grid grid-cols-1 grid-rows-1 lg:grid-col-2 md:grid-cols-2 sm:grid-cols-2 bg-white py-5 px-8 mb-10 rounded-lg">
+                    <div class="product-image col-span-1 row-span-1">
+                        <h1 class="mb-4 font-bold text-gray-800 text-3xl">Erni gapi gapmi ?!</h1>
+                        <img src="{% static 'images/white-t-short.svg'%}" alt="">
+                    </div>
+                    <div class="product-detail col-span-1 row-span-1">
+                        <div class="flex justify-between items-center px-4 ">
+                            <p class="text-3xl font-bold">
+                                <span class="text-yellow-400">$7.5</span>- 81.000 uzs
+                            </p>
+                            <p class="text-2xl">
+                                <a href="#"><i class="fa-regular fa-trash-can" style="color: #9b9b9d;"></i></a>
+                            </p>
+                        </div>
+                        <p class="description px-4 mt-10">
+                            80% paxta va 20% poliesterdan tayyorlangan  sifatli futbolka. M ,L, XL, XXL hajmlarida mavjud.
+                            80% paxta va 20% poliesterdan tayyorlangan  sifatli futbolka. M ,L, XL, XXL hajmlarida mavjud.          
+                        </p>
+                        <p class="px-4 mt-10">
+                            Omborda : bor. (12- ta qoldi)
+                        </p>
+                        <form action="" class="flex px-4 mt-10 justify-between">
+                            <select name="color" id="color" class="outline-none">
+                                <option value="white">Oq</option>
+                                <option value="black">Qora</option>
+                                <option value="gray">Gray</option>
+                            </select>
+                            <select name="size" id="size" class="outline-none">
+                                <option value="xl">Xl</option>
+                                <option value="lx">Lx</option>
+                                <option value="xs">Gray</option>
+                            </select>
+                            <select name="amount" id="amount" class="outline-none">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </form>
+                        <button class="rounded-lg bg-yellow-400 mt-10 text-xl font-bold py-2 px-4 ml-4">Sotib olish</button>
+                    </div>
+                </div>
+                <div class="product gap-y-4 grid grid-cols-1 grid-rows-1 lg:grid-col-2 md:grid-cols-2 sm:grid-cols-2 bg-white py-5 px-8 mb-10 rounded-lg">
+                    <div class="product-image col-span-1 row-span-1">
+                        <h1 class="mb-4 font-bold text-gray-800 text-3xl">Erni gapi gapmi ?!</h1>
+                        <img src="{% static 'images/white-t-short.svg'%}" alt="">
+                    </div>
+                    <div class="product-detail col-span-1 row-span-1">
+                        <div class="flex justify-between items-center px-4 ">
+                            <p class="text-3xl font-bold">
+                                <span class="text-yellow-400">$7.5</span>- 81.000 uzs
+                            </p>
+                            <p class="text-2xl">
+                                <a href="#"><i class="fa-regular fa-trash-can" style="color: #9b9b9d;"></i></a>
+                            </p>
+                        </div>
+                        <p class="description px-4 mt-10">
+                            80% paxta va 20% poliesterdan tayyorlangan  sifatli futbolka. M ,L, XL, XXL hajmlarida mavjud.
+                            80% paxta va 20% poliesterdan tayyorlangan  sifatli futbolka. M ,L, XL, XXL hajmlarida mavjud.          
+                        </p>
+                        <p class="px-4 mt-10">
+                            Omborda : bor. (12- ta qoldi)
+                        </p>
+                        <form action="" class="flex px-4 mt-10 justify-between">
+                            <select name="color" id="color" class="outline-none">
+                                <option value="white">Oq</option>
+                                <option value="black">Qora</option>
+                                <option value="gray">Gray</option>
+                            </select>
+                            <select name="size" id="size" class="outline-none">
+                                <option value="xl">Xl</option>
+                                <option value="lx">Lx</option>
+                                <option value="xs">Gray</option>
+                            </select>
+                            <select name="amount" id="amount" class="outline-none">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </form>
+                        <button class="rounded-lg bg-yellow-400 mt-10 text-xl font-bold py-2 px-4 ml-4">Sotib olish</button>
+                    </div>
+                </div>
+
+                <!-- ! Cart Product -->
+                
+            </div>
+            <div class="col-start-1 col-end-11 lg:col-start-8 px-5">
+                <!-- Order  -->
+                <div class="about-order bg-white rounded-lg px-5 py-5">
+                    <h1 style="color: #404143;" class="text-xl font-bold mb-4">Buyurtmaga</h1>
+                    <p>Tovarlar soni : 2 ta </p>
+                    <p class="mt-2">Umumiy summa : $15 - 162.000 uzs</p>
+                    <p class="mt-2">Yetkazib berish : Bepul</p>
+                    <p class="mt-2">Chegirma bilan : 155.000 uzs</p>
+                    <button class="rounded-lg bg-yellow-400 mt-10 text-xl font-bold py-2 px-4 ">Buyurtma</button>
+                </div>
+                <!-- Payment types -->
+                <div class="about-order bg-white rounded-lg px-5 py-5 mt-5">
+                    <p class="text-xl font-bold">To’lov usullari </p>
+                   <div class="payme ml-5 mt-4"><img src="{% static 'images/payme.svg'%}" alt=""></div>
+                   <div class="payme"><img src="{% static 'images/Apelsin_02 1.svg'%}" alt=""></div>
+                </div>
+                <!-- ! Payment types -->
+
+                <!-- Sociel Networks -->
+                <div class="about-order bg-white rounded-lg px-5 py-5 mt-5">
+                    <h1 style="color: #404143;" class="text-xl font-bold mb-4">Biz ijtimoiy tarmoqlarda</h1>
+                    <p class="text-xl mt-8"><span class="mr-2"><i class="fa-brands fa-facebook" style="color: #1160e8;"></i></span>Facebok</p>
+                    <p class="text-xl mt-4"><span class="mr-2"><i class="fa-brands fa-square-instagram" style="color: #e23c7e;"></i></span>Instagram</p>
+                    <p class="text-xl mt-4"><span class="mr-2"><i class="fa-brands fa-telegram" style="color: #0a5ef0;"></i></span>Telegram</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-center mt-4">
+            <h1 style="color: #404143;" class="text-xl font-bold  sm:text-2xl md:text-3xl lg:text-3xl">Tez va bepul yetkazib berish</h1>
+              <div class="box">
+                  <div class="box_inner">
+                    <p>Bepul yetkazish</p>
+                    <p>Yetkazish vaqti ~ 1 kun</p>
+                  </div>
+                  <div class="box_inner">
+                    <p>Ostonagacha yoki pochtaga</p>
+                    <p>Mahsulot qaytarishga 3 kun</p>
+                  </div>
+                  <div class="box_inner">
+                    <p>Pulni qaytarib olish imkoniyati</p>
+                    <p>O’zingizga qulay to’lov turi</p>
+                  </div>
+              </div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'js/product.js'%}"></script>
+{% endblock content %}

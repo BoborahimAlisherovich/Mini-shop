@@ -1,0 +1,87 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block head %}
+    <title>Product</title>
+    <link rel="stylesheet" href="{% static 'css/product.css'%}">
+{% endblock head %}
+{% block content %}
+        <div class="container">
+        <div class="main_inner">
+          <div class="main-top">
+            <img src="{% static 'images/t-shirt.svg'%}" alt="" />
+            <div class="description">
+              <div class="main-text">
+                <h1>Erni gapi gapmi?!</h1>
+              </div>
+              <div class="price">
+                <p style="color: #ffd600">$7.5</p>
+                <p style="margin-left: 10px">- 81.000 uzs</p>
+              </div>
+              <p class="text">Material : paxta 80%, poliester 20%,</p>
+              <p class="text">Omborda : mavjud. (11 ta qoldi)</p>
+              <p class="text" style="margin-top: 20px">Tovar haqida :</p>
+              <p class="about_img">
+                80% paxta va 20% poliesterdan tayyorlangan sifatli futbolka.
+                <br />
+                M ,L, XL, XXL hajmlarida mavjud. <br />
+                80% paxta va 20% poliesterdan tayyorlangan sifatli futbolka.
+                <br />
+                M ,L, XL, XXL hajmlarida mavjud.
+              </p>
+              <a href="#" class="btn">Savatchaga olish</a>
+            </div>
+          </div>
+          <div class="main-center">
+            <h1 style="color: #404143;">Tez va bepul yetkazib berish</h1>
+              <div class="box">
+                  <div class="box_inner">
+                    <p>Bepul yetkazish</p>
+                    <p>Yetkazish vaqti ~ 1 kun</p>
+                  </div>
+                  <div class="box_inner">
+                    <p>Ostonagacha yoki pochtaga</p>
+                    <p>Mahsulot qaytarishga 3 kun</p>
+                  </div>
+                  <div class="box_inner">
+                    <p>Pulni qaytarib olish imkoniyati</p>
+                    <p>O’zingizga qulay to’lov turi</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="products-in">
+          <span class="title">Hudilar</span>
+          <div class="products__list">
+              <div class="products__imagebox">
+                  <img class="products__right--image products__right--image1" src="{% static 'images/t-short.svg'%}" alt="T-Short">
+                  <span class="products__price">
+                      <p class="products__price--yellow">$7.5 </p>
+                      <p> - 81.000 uzs</p>
+                  </span>
+              </div>
+              <div class="products__imagebox">
+                  <img class="products__right--image products__right--image1" src="{% static 'images/t-short.svg'%}" alt="T-Short">
+                  <span class="products__price">
+                      <p class="products__price--yellow">$7.5 </p>
+                      <p> - 81.000 uzs</p>
+                  </span>
+              </div>
+              <div class="products__imagebox">
+                  <img class="products__right--image products__right--image1" src="{% static 'images/t-short.svg'%}" alt="T-Short">
+                  <span class="products__price">
+                      <p class="products__price--yellow">$7.5 </p>
+                      <p> - 81.000 uzs</p>
+                  </span>
+              </div>
+              <div class="products__imagebox">
+                  <img class="products__right--image products__right--image1" src="{% static 'images/t-short.svg'%}" alt="T-Short">
+                  <span class="products__price">
+                      <p class="products__price--yellow">$7.5 </p>
+                      <p> - 81.000 uzs</p>
+                  </span>
+              </div>
+          </div>
+        </div>
+        </div>
+        <script src="{% static 'js/product.js'%}"></script>
+{% endblock content %}

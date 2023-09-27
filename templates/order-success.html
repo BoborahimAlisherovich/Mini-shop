@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<title>Order success</title>
+<link rel="stylesheet" href="{% static 'css/order-success.css'%}">
+{% endblock head %}
+{% block content %}
+<div class="container">
+    <div class="main-in">
+        <img class="main__image" src="{% static 'images/service1.svg'%}" alt="Delivery">
+        <div class="main__text">
+            <h3>ID: <a href="#" style="color: #FE8947;">&emsp14; #bdf223 &emsp14;</a> lik buyurtma muvoffaqiyatli yetkazib berish jarayoniga qo'shildi. <br> Tez orada tovar qo'lingizda bo'ladi</h3>
+        </div>
+        <button class="button cursor bold" style="padding: 8px 35px;"><h3><a href="/">Ortga</a></h3></button>
+    </div>
+</div>
+<script src="{% static 'js/app.js'%}"></script>
+{% endblock content %}

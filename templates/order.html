@@ -1,0 +1,79 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block head %}
+<title>Order</title>
+<link rel="stylesheet" href="{% static 'css/order.css'%}">
+{% endblock head %}
+{% block content %}
+<section>
+    <div class="container">
+        <div class="order-blog">
+            <span class="title">Buyurtma berish</span>
+            <div class="order">
+                <div class="order-form">
+                    <form>
+                        <input type="name" class="order-form-inputs input-1" placeholder="Ism" required>
+                        <input type="name" class="order-form-inputs input-2" placeholder="Familiya" required><br>
+                        <input type="email" class="order-form-inputs input-3-4" placeholder="Pochta" required><br>
+                        <input type="adress" class="order-form-inputs input-3-4" placeholder="Manzil" required>
+                        <input type="tel" class="order-form-inputs input-2" placeholder="Telefon" required>
+                        <input type="number" class="order-form-inputs input-1" placeholder="Pochta indeksi" required><br>
+                        <input type="text" class="order-form-inputs" placeholder="To'lov turi" required>
+                        <input type="text" class="order-form-inputs" placeholder="Kupon (agar bo'lsa)" required> <br>
+                        <div class="orders-form-button">
+                            <a href="">Buyurtma</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="orders-and-pay-blog">
+                    <div class="orders">
+                        <h3 class="orders-main-text">Buyurtmaga</h3>
+                        <div class="orders-text">
+                            <p class="number-of-orders">Tovarlar soni : 2 ta </p>
+                            <p class="number-of-orders">Umumiy summa : $15 - 162.000 uzs</p>
+                            <p class="number-of-orders">Yetkazib berish : Bepul</p>
+                            <p class="number-of-orders">Chegirma bilan : 155.000 uzs</p>
+                        </div>
+                        <div class="orders-button">
+                            <a href="">Buyurtma</a>
+                        </div>
+                    </div>
+                    <div class="pay">
+                        <h3 class="pay-text">To'lov usullari </h3>
+                        <img src="{% static 'images/payme.svg'%}" alt="" style="padding-top: 15px;">
+                        <img src="{% static 'images/aplesin.svg'%}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="services">
+    <div class="container">
+        <div class="services-in">
+            <div class="services__card">
+                <img class="service__image" src="{% static 'images/service1.svg'%}" alt="Delivery">
+                <span>O'zbekiston bo'ylab yetkazib berish</span>
+            </div>
+            <div class="services__card">
+                <img class="service__image" src="{% static 'images/service2.svg'%}" alt="Payment methods">
+                <span>Qulay to'lov usullari</span>
+            </div>
+            <div class="services__card">
+                <img class="service__image" src="{% static 'images/service3.svg'%}" alt="24/7 Working time">
+                <span>Haftada 7 kun 24 soat aloqadamiz</span>
+            </div>
+            <div class="services__card">
+                <img class="service__image" src="{% static 'images/service4.svg'%}" alt="High quality permormance">
+                <span>Yuqori sifatli tovarlar</span>
+            </div>
+            <div class="services__card">
+                <img class="service__image" src="{% static 'images/service4.svg'%}" alt="Cashback">
+                <span>3 kun ichida pulni qaytarib olish</span>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="{% static 'js/app.js'%}"></script>
+{% endblock content %}
+        
